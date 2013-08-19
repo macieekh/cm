@@ -1,4 +1,7 @@
 Carminder::Application.routes.draw do
+  resources :cars
+
+
   devise_for :users
 
   get 'about' => 'pages#about'

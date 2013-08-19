@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  oc_date: 2013-08-19
+  ac_date: 2013-08-19
+  service_date: 2013-08-19
+  oil_date: 2013-08-19
+
+two:
+  name: MyString
+  oc_date: 2013-08-19
+  ac_date: 2013-08-19
+  service_date: 2013-08-19
+  oil_date: 2013-08-19
