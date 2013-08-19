@@ -1,10 +1,12 @@
-<h2>Moje Samochody</h2>
+<h1>Moje samochody</h1>
 
-<table class="table">
+<table>
   <tr>
     <th>Nazwa</th>
     <th>Data wygaśnięcia OC</th>
-    <th>Data następnego przeglądu</th>
+    <th>Ac date</th>
+    <th>Service date</th>
+    <th>Oil date</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,7 +16,9 @@
   <tr>
     <td><%= car.name %></td>
     <td><%= car.oc_date %></td>
+    <td><%= car.ac_date %></td>
     <td><%= car.service_date %></td>
+    <td><%= car.oil_date %></td>
     <td><%= link_to 'Show', car %></td>
     <td><%= link_to 'Edit', edit_car_path(car) %></td>
     <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -24,4 +28,4 @@
 
 <br />
 
-<%= link_to 'Dodaj nowy samochód', new_car_path %>
+<%= link_to 'New Car', new_car_path %>

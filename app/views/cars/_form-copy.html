@@ -10,23 +10,28 @@
       </ul>
     </div>
   <% end %>
-  <br>
+
   <div class="field">
-    <%= f.label :name, "Wprowadź nazwę samochodu lub podaj nr rejestracyjny:" %>
+    <%= f.label :name, "Wprowadź nazwę samochodu lub podaj nr rejestracyjny" %><br />
     <%= f.text_field :name %>
   </div>
-  <p></p>
   <div class="field">
-    <%= f.label :oc_date, "Data wygaśnięcia polisy OC:"%>
+    <%= f.label :oc_date, "Data wygaśnięcia polisy OC"%><br />
     <%= f.date_select :oc_date %>
   </div>
-  <p></p>
   <div class="field">
-    <%= f.label :service_date, "Data następnego przeglądu technicznego:"%>
+    <%= f.label :ac_date %><br />
+    <%= f.date_select :ac_date %>
+  </div>
+  <div class="field">
+    <%= f.label :service_date, "Data następnego przeglądu technicznego"%><br />
     <%= f.date_select :service_date %>
   </div>
+  <div class="field">
+    <%= f.label :oil_date %><br />
+    <%= f.date_select :oil_date %>
+  </div>
   <div class="actions">
-    <%= f.submit "Dodaj Samochód" %>
+    <%= f.submit %>
   </div>
 <% end %>
-
